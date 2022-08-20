@@ -4,4 +4,4 @@
 # at https://docs.paperspace.com/gradient/get-started/tutorials-list/end-to-end-example
 # See that URL for instructions on how to use
 # This file is called from the Gradient Notebook deep_learning_recommender_tf.ipynb
-# A deployed model is output, to which inference data can then be sent in the following section of the
+# A deployed model is output, to which inference data can then be sent in the following section of the Notebook [
