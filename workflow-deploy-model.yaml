@@ -11,4 +11,4 @@
 # but is shown there for completeness. Also, on the public cluster, job 2 will fail due to the lack of a --clusterID
 # argument. But model deploy support will supersede this.
 #
-# Last up
+# Last updated: Nov 0
