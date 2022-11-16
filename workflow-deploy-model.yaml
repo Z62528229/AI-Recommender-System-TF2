@@ -15,4 +15,4 @@
 
 defaults:
   resources:
-    instance-ty
+    instance-type: C4
