@@ -17,4 +17,4 @@ defaults:
   resources:
     instance-type: C4
   env:
-    PAPERSPACE_API
+    PAPERSPACE_API_KEY: secret:
