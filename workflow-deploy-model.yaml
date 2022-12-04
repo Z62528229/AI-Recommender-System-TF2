@@ -17,4 +17,8 @@ defaults:
   resources:
     instance-type: C4
   env:
-    PAPERSPACE_API_KEY: secret:api_key_recommend
+    PAPERSPACE_API_KEY: secret:api_key_recommender
+
+jobs:
+
+  # 1.
