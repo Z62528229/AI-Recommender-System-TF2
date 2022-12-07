@@ -23,4 +23,4 @@ jobs:
 
   # 1. Upload model
   #
-  # This makes the model visible to the deploy s
+  # This makes the model visible to the deploy step, and get
