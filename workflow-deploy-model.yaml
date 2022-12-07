@@ -24,4 +24,4 @@ jobs:
   # 1. Upload model
   #
   # This makes the model visible to the deploy step, and gets its ID
-  # The model dataset reference refers to the latest version of
+  # The model dataset reference refers to the latest version of the mo
