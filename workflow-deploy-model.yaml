@@ -25,4 +25,4 @@ jobs:
   #
   # This makes the model visible to the deploy step, and gets its ID
   # The model dataset reference refers to the latest version of the model
-  # A particular
+  # A particular version
