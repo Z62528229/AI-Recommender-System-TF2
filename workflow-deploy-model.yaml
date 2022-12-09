@@ -27,4 +27,4 @@ jobs:
   # The model dataset reference refers to the latest version of the model
   # A particular version of the model can also be specified, via <dataset ID>:<dataset version>
 
-  U
+  UploadModel:
