@@ -30,4 +30,5 @@ jobs:
   UploadModel:
     inputs:
       model:
-        type
+        type: dataset
+     
