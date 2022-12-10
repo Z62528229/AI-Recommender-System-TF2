@@ -28,3 +28,5 @@ jobs:
   # A particular version of the model can also be specified, via <dataset ID>:<dataset version>
 
   UploadModel:
+    inputs:
+     
