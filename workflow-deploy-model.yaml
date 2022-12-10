@@ -32,4 +32,5 @@ jobs:
       model:
         type: dataset
         with:
-          ref: recommende
+          ref: recommender
+    output
