@@ -31,4 +31,4 @@ jobs:
     inputs:
       model:
         type: dataset
-     
+        wi
