@@ -30,3 +30,4 @@ jobs:
   UploadModel:
     inputs:
       model:
+        type
