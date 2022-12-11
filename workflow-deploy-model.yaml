@@ -37,3 +37,4 @@ jobs:
       model-id:
         type: string
     uses: create-model@v1
+    with:
