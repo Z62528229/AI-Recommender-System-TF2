@@ -36,4 +36,4 @@ jobs:
     outputs:
       model-id:
         type: string
-    uses: cr
+    uses: create-model@v1
