@@ -39,3 +39,4 @@ jobs:
     uses: create-model@v1
     with:
       name: model
+      ty
