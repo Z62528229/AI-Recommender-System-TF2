@@ -35,4 +35,4 @@ jobs:
           ref: recommender
     outputs:
       model-id:
-  
+        type: 
