@@ -33,4 +33,5 @@ jobs:
         type: dataset
         with:
           ref: recommender
-    output
+    outputs:
+      
