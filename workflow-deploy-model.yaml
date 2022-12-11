@@ -36,4 +36,4 @@ jobs:
     outputs:
       model-id:
         type: string
-    use
+    uses: cr
