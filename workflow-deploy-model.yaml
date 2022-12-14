@@ -41,4 +41,4 @@ jobs:
       name: model
       type: Tensorflow
 
-  # 2. D
+  # 2. Deploy model
