@@ -44,4 +44,4 @@ jobs:
   # 2. Deploy model
   #
   # Creates a deployment in the stopped state
-  # NOTE: In future passing the model ID will be better supported, and will not require the "ca
+  # NOTE: In future passing the model ID will be better supported, and will not require the "cat" command
