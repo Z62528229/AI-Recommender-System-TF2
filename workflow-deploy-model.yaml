@@ -49,4 +49,5 @@ jobs:
   CreateDeployment:
     needs:
       - UploadModel
-    
+    inputs:
+     
