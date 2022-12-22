@@ -50,4 +50,4 @@ jobs:
     needs:
       - UploadModel
     inputs:
-      model-id: 
+      model-id: UploadModel.
