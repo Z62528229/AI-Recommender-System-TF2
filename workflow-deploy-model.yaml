@@ -52,4 +52,4 @@ jobs:
     inputs:
       model-id: UploadModel.outputs.model-id
     outputs:
-   
+       deploy
