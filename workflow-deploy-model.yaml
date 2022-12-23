@@ -53,4 +53,4 @@ jobs:
       model-id: UploadModel.outputs.model-id
     outputs:
        deployment-id:
-    
+          type: stri
