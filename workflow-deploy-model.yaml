@@ -56,4 +56,5 @@ jobs:
           type: string
     uses: script@v1
     with:
-      script
+      script: |-
+       
