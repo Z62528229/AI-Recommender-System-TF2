@@ -57,4 +57,5 @@ jobs:
     uses: script@v1
     with:
       script: |-
-       
+        cd /inputs
+  
