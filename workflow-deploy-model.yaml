@@ -54,4 +54,5 @@ jobs:
     outputs:
        deployment-id:
           type: string
-    uses: scrip
+    uses: script@v1
+    wi
