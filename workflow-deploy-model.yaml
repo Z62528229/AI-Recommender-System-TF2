@@ -59,4 +59,4 @@ jobs:
       script: |-
         cd /inputs
         gradient deployments create \
-          --deploymentType
+          --deploymentType TFServing 
