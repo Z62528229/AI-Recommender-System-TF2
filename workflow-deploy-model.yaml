@@ -58,4 +58,5 @@ jobs:
     with:
       script: |-
         cd /inputs
-        gradient deployments crea
+        gradient deployments create \
+      
