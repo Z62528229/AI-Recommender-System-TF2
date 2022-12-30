@@ -61,4 +61,4 @@ jobs:
         gradient deployments create \
           --deploymentType TFServing \
           --modelId $(cat /inputs/model-id) \
-  
+          
