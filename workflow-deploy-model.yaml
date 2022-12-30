@@ -60,4 +60,4 @@ jobs:
         cd /inputs
         gradient deployments create \
           --deploymentType TFServing \
-          --mo
+          --modelId $(c
