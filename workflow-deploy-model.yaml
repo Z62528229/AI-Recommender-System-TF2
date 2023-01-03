@@ -61,4 +61,5 @@ jobs:
         gradient deployments create \
           --deploymentType TFServing \
           --modelId $(cat /inputs/model-id) \
-          --name "Recommender Model
+          --name "Recommender Model" \
+  
