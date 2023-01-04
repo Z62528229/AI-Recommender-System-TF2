@@ -62,4 +62,4 @@ jobs:
           --deploymentType TFServing \
           --modelId $(cat /inputs/model-id) \
           --name "Recommender Model" \
-        
+          --machine
