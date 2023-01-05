@@ -64,4 +64,4 @@ jobs:
           --name "Recommender Model" \
           --machineType C5 \
           --imageUrl tensorflow/serving:latest-gpu \
-  
+          --ins
