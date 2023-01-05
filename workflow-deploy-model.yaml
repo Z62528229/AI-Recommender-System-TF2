@@ -63,4 +63,5 @@ jobs:
           --modelId $(cat /inputs/model-id) \
           --name "Recommender Model" \
           --machineType C5 \
-          --imageUrl tensorflow/serving:latest-gp
+          --imageUrl tensorflow/serving:latest-gpu \
+  
