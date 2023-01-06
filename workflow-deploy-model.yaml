@@ -65,4 +65,5 @@ jobs:
           --machineType C5 \
           --imageUrl tensorflow/serving:latest-gpu \
           --instanceCount 1 \
-          | awk 'NR==1 {print
+          | awk 'NR==1 {print $NF}' \
+   
