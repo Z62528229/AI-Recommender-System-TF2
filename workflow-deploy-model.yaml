@@ -67,4 +67,4 @@ jobs:
           --instanceCount 1 \
           | awk 'NR==1 {print $NF}' \
           | tee /outputs/deployment-id
-      
+      image: pape
