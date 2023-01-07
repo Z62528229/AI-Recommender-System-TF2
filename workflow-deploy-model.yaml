@@ -66,4 +66,5 @@ jobs:
           --imageUrl tensorflow/serving:latest-gpu \
           --instanceCount 1 \
           | awk 'NR==1 {print $NF}' \
-          | tee /outputs/d
+          | tee /outputs/deployment-id
+      
