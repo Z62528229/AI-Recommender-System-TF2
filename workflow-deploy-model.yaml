@@ -71,4 +71,6 @@ jobs:
 
   # 3. Start deployment
   #
-  # Start the deployment created in step 2 on an end
+  # Start the deployment created in step 2 on an endpoint
+
+  Star
