@@ -73,4 +73,4 @@ jobs:
   #
   # Start the deployment created in step 2 on an endpoint
 
-  Star
+  StartDeployment:
