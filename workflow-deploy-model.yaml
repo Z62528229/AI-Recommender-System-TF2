@@ -76,4 +76,5 @@ jobs:
   StartDeployment:
     needs:
       - UploadModel
-      - CreateDeplo
+      - CreateDeployment
+    inp
