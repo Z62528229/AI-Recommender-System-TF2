@@ -78,4 +78,4 @@ jobs:
       - UploadModel
       - CreateDeployment
     inputs:
-      model-id: UploadMod
+      model-id: UploadModel.output
