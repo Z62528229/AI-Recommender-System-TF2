@@ -79,4 +79,5 @@ jobs:
       - CreateDeployment
     inputs:
       model-id: UploadModel.outputs.model-id
-      deployment-id: CreateDeployment.outputs.deployment-
+      deployment-id: CreateDeployment.outputs.deployment-id
+    uses: scrip
