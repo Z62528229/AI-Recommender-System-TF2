@@ -80,4 +80,5 @@ jobs:
     inputs:
       model-id: UploadModel.outputs.model-id
       deployment-id: CreateDeployment.outputs.deployment-id
-    uses: scrip
+    uses: script@v1
+ 
