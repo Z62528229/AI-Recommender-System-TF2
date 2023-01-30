@@ -85,4 +85,4 @@ jobs:
       script: |-
         gradient deployments start \
           --id $(cat /inputs/deployment-id)
-      image:
+      image: paperspace/gra
