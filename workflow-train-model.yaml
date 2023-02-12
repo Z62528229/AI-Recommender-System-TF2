@@ -5,4 +5,5 @@
 # See that URL for instructions on how to use
 # This file is called from the Gradient Notebook deep_learning_recommender_tf.ipynb
 # In turn, this file calls workflow_train_model.py
-# A trained model is output, which is then deployed in the following section of the Note
+# A trained model is output, which is then deployed in the following section of the Notebook
+# 
