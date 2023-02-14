@@ -6,4 +6,4 @@
 # This file is called from the Gradient Notebook deep_learning_recommender_tf.ipynb
 # In turn, this file calls workflow_train_model.py
 # A trained model is output, which is then deployed in the following section of the Notebook
-# The project GitHub repository, which includes this file, is at https://github.com/gradient-ai/Dee
+# The project GitHub repository, which includes this file, is at https://github.com/gradient-ai/Deep-Learning-Re
