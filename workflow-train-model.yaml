@@ -11,4 +11,4 @@
 # Dataset ID
 #
 # The user needs to create their own Gradient managed dataset for job outputs, using the same name as here: "recommender"
-# See the project Notebook for d
+# See the project Notebook for details on 
