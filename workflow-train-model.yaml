@@ -17,4 +17,4 @@
 
 defaults:
   resources:
-    instance-type:
+    instance-type: C4 # C5,
