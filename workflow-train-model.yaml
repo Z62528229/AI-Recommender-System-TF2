@@ -17,4 +17,5 @@
 
 defaults:
   resources:
-    instance-type: C4 # C5, P4000, etc., will als
+    instance-type: C4 # C5, P4000, etc., will also work
+  e
