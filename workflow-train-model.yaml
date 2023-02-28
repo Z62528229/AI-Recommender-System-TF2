@@ -19,4 +19,4 @@ defaults:
   resources:
     instance-type: C4 # C5, P4000, etc., will also work
   env:
-    PAPERSPACE_AP
+    PAPERSPACE_API_KEY: secret:a
