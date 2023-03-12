@@ -27,4 +27,4 @@ jobs:
 
   # The repo is public so no GitHub authorization credentials are required
   # The URL has to be without .git extension
-  # Th
+  # The checkout
