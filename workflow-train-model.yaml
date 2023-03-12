@@ -26,4 +26,5 @@ jobs:
   # 1. Clone recommender repo
 
   # The repo is public so no GitHub authorization credentials are required
-  # The URL has to be without .git ext
+  # The URL has to be without .git extension
+  # Th
