@@ -33,4 +33,5 @@ jobs:
     outputs:
       repoRec:
         type: volume
-    uses: git-chec
+    uses: git-checkout@v1
+    with
