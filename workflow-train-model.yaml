@@ -35,4 +35,4 @@ jobs:
         type: volume
     uses: git-checkout@v1
     with:
-      url: https://github.com/gradient-ai/Deep-Learning-Recommend
+      url: https://github.com/gradient-ai/Deep-Learning-Recommender-TF
