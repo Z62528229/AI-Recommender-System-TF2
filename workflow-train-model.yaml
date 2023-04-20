@@ -40,4 +40,4 @@ jobs:
   # 2. Train model
 
   # The job calls the Python script workflow_train_model.py
-  # Model hyperparameters are passed in as environment variables using the env
+  # Model hyperparameters are passed in as environment variables using the env keyword
