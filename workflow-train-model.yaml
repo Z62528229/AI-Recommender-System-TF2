@@ -41,4 +41,6 @@ jobs:
 
   # The job calls the Python script workflow_train_model.py
   # Model hyperparameters are passed in as environment variables using the env keyword
-  # The script outputs the saved model to /outputs/trainedRecommender, a versioned Gradient D
+  # The script outputs the saved model to /outputs/trainedRecommender, a versioned Gradient Dataset
+
+  Recom
