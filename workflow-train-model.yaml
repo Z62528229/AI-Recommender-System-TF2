@@ -45,4 +45,5 @@ jobs:
 
   RecommenderTrain:
     needs:
-      - C
+      - CloneRecRepo
+ 
