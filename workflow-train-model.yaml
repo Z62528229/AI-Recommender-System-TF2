@@ -47,4 +47,5 @@ jobs:
     needs:
       - CloneRecRepo
     inputs:
-      repoRec: CloneRecRepo.outputs
+      repoRec: CloneRecRepo.outputs.repoRec
+  
