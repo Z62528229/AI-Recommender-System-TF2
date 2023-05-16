@@ -50,4 +50,5 @@ jobs:
       repoRec: CloneRecRepo.outputs.repoRec
     env:
       HP_FINAL_EPOCHS: '50'
-      HP_FINAL_LR: '0
+      HP_FINAL_LR: '0.1'
+    outp
