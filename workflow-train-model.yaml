@@ -53,4 +53,5 @@ jobs:
       HP_FINAL_LR: '0.1'
     outputs:
       trainedRecommender:
-        type: da
+        type: dataset
+  
