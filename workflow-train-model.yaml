@@ -54,4 +54,5 @@ jobs:
     outputs:
       trainedRecommender:
         type: dataset
-  
+        with:
+   
