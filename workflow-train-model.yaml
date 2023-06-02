@@ -55,4 +55,5 @@ jobs:
       trainedRecommender:
         type: dataset
         with:
-          ref: recomm
+          ref: recommender
+   
