@@ -56,4 +56,5 @@ jobs:
         type: dataset
         with:
           ref: recommender
-    uses: scrip
+    uses: script@v1
+    wi
