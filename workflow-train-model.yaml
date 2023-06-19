@@ -58,4 +58,5 @@ jobs:
           ref: recommender
     uses: script@v1
     with:
-      sc
+      script: |-
+       
