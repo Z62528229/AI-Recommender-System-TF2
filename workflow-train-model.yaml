@@ -59,4 +59,4 @@ jobs:
     uses: script@v1
     with:
       script: |-
-       
+        cp -R /inpu
