@@ -59,4 +59,5 @@ jobs:
     uses: script@v1
     with:
       script: |-
-        cp -R /inputs/repoRec /Deep-Learning-Recommender-T
+        cp -R /inputs/repoRec /Deep-Learning-Recommender-TF
+        cd
