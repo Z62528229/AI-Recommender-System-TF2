@@ -61,3 +61,4 @@ jobs:
       script: |-
         cp -R /inputs/repoRec /Deep-Learning-Recommender-TF
         cd /Deep-Learning-Recommender-TF
+        p
