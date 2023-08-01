@@ -61,4 +61,4 @@ jobs:
       script: |-
         cp -R /inputs/repoRec /Deep-Learning-Recommender-TF
         cd /Deep-Learning-Recommender-TF
-        python workflow_train_m
+        python workflow_train_model.py
