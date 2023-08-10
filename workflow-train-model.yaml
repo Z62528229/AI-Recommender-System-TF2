@@ -62,4 +62,4 @@ jobs:
         cp -R /inputs/repoRec /Deep-Learning-Recommender-TF
         cd /Deep-Learning-Recommender-TF
         python workflow_train_model.py
-      image: tensor
+      image: tensorflow/tensorfl
