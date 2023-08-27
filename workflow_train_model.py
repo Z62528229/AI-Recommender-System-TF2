@@ -31,3 +31,24 @@ import numpy as np
 import tensorflow as tf
 import tensorflow_datasets as tfds
 import tensorflow_recommenders as tfrs
+
+# Get model hyperparameters
+
+hp_final_epochs = int(os.environ.get('HP_FINAL_EPOCHS'))
+hp_final_lr = float(os.environ.get('HP_FINAL_LR'))
+
+# Data preparation
+
+ratings_raw = tfds.load("movielens/100k-ratings", split="train")
+
+ratings = ratings_raw.map(lambda x: {
+    "movie_title": x["movie_title"],
+    "timestamp": x["timestamp"],
+    "user_id": x["user_id"],
+    "user_rating": x["user_rating"]
+})
+
+timestamps = np.concatenate(list(ratings.map(lambda x: x["timestamp"]).batch(100)))
+
+max_time = timestamps.max()
+min_time = timestamps.min()
