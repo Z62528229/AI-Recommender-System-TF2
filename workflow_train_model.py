@@ -52,3 +52,10 @@ timestamps = np.concatenate(list(ratings.map(lambda x: x["timestamp"]).batch(100
 
 max_time = timestamps.max()
 min_time = timestamps.min()
+
+sixtieth_percentile = min_time + 0.6*(max_time - min_time)
+eightieth_percentile = min_time + 0.8*(max_time - min_time)
+
+train =      ratings.filter(lambda x: x["timestamp"] <= sixtieth_percentile)
+validation = ratings.filter(lambda x: x["timestamp"] > sixtieth_percentile and x["timestamp"] <= eightieth_percentile)
+test =       ratings.filter(lambda x: x["timestamp"] > eightieth_percentile)
