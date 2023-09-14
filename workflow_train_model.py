@@ -59,3 +59,12 @@ eightieth_percentile = min_time + 0.8*(max_time - min_time)
 train =      ratings.filter(lambda x: x["timestamp"] <= sixtieth_percentile)
 validation = ratings.filter(lambda x: x["timestamp"] > sixtieth_percentile and x["timestamp"] <= eightieth_percentile)
 test =       ratings.filter(lambda x: x["timestamp"] > eightieth_percentile)
+
+ntimes_tr = 0
+ntimes_va = 0
+ntimes_te = 0
+
+for x in train.take(-1).as_numpy_iterator():
+  ntimes_tr += 1
+
+for x in validation.take(-1).as_numpy_iterator():
