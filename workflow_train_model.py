@@ -83,3 +83,19 @@ validation = validation.shuffle(ntimes_va)
 test = test.shuffle(ntimes_te)
 
 movie_titles = ratings.batch(1_000_000).map(lambda x: x["movie_title"])
+user_ids = ratings.batch(1_000_000).map(lambda x: x["user_id"])
+
+unique_movie_titles = np.unique(np.concatenate(list(movie_titles)))
+unique_user_ids = np.unique(np.concatenate(list(user_ids)))
+
+cached_train = train.shuffle(ntimes_tr).batch(8192).cache()
+cached_validation = validation.shuffle(ntimes_va).batch(8192).cache()
+cached_test = test.batch(4096).cache()
+
+# Define model
+
+class MovielensModelTunedRanking(tfrs.models.Model):
+
+    def __init__(self) -> None:
+        super().__init__()
+        embedding_dimension = 32
