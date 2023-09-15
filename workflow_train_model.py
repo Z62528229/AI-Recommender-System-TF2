@@ -68,3 +68,18 @@ for x in train.take(-1).as_numpy_iterator():
   ntimes_tr += 1
 
 for x in validation.take(-1).as_numpy_iterator():
+  ntimes_va += 1
+
+for x in test.take(-1).as_numpy_iterator():
+  ntimes_te += 1
+
+print("Number of rows in training set = {}".format(ntimes_tr))
+print("Number of rows in validation set = {}".format(ntimes_va))
+print("Number of rows in testing set = {}".format(ntimes_te))
+print("Total number of rows = {}".format(ntimes_tr+ntimes_va+ntimes_te))
+
+train = train.shuffle(ntimes_tr)
+validation = validation.shuffle(ntimes_va)
+test = test.shuffle(ntimes_te)
+
+movie_titles = ratings.batch(1_000_000).map(lambda x: x["movie_title"])
