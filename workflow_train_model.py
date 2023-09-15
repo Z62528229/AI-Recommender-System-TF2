@@ -114,3 +114,9 @@ class MovielensModelTunedRanking(tfrs.models.Model):
 
         self.rating_model = tf.keras.Sequential([
             tf.keras.layers.Dense(256, activation="relu", kernel_regularizer=tf.keras.regularizers.l2(0.01)),
+            tf.keras.layers.Dense(64, activation="relu", kernel_regularizer=tf.keras.regularizers.l2(0.01)),
+            tf.keras.layers.Dense(1)
+        ])
+
+        self.task: tf.keras.layers.Layer = tfrs.tasks.Ranking(
+            loss = tf.keras.losses.MeanSquaredError(),
