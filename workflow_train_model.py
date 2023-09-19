@@ -120,3 +120,15 @@ class MovielensModelTunedRanking(tfrs.models.Model):
 
         self.task: tf.keras.layers.Layer = tfrs.tasks.Ranking(
             loss = tf.keras.losses.MeanSquaredError(),
+            metrics=[tf.keras.metrics.RootMeanSquaredError()]
+        )
+
+    def call(self, features: Dict[Text, tf.Tensor]) -> tf.Tensor:
+
+        user_embeddings = self.user_model(features["user_id"])
+        movie_embeddings = self.movie_model(features["movie_title"])
+
+        return (
+            user_embeddings,
+            movie_embeddings,
+            self.rating_model(
