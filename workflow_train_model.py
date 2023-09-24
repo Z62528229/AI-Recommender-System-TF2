@@ -132,3 +132,15 @@ class MovielensModelTunedRanking(tfrs.models.Model):
             user_embeddings,
             movie_embeddings,
             self.rating_model(
+                tf.concat([user_embeddings, movie_embeddings], axis=1)
+            ),
+        )
+
+    def compute_loss(self, features: Dict[Text, tf.Tensor], training=False) -> tf.Tensor:
+
+        ratings = features.pop("user_rating")
+        user_embeddings, movie_embeddings, rating_predictions = self(features)
+
+        rating_loss = self.task(
+            labels=ratings,
+            predictions=rating_predictions,
