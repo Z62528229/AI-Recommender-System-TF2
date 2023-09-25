@@ -144,3 +144,15 @@ class MovielensModelTunedRanking(tfrs.models.Model):
         rating_loss = self.task(
             labels=ratings,
             predictions=rating_predictions,
+        )
+
+        return rating_loss
+
+# Train model
+
+model_tr = MovielensModelTunedRanking()
+model_tr.compile(optimizer=tf.keras.optimizers.Adagrad(learning_rate=hp_final_lr))
+history_tr = model_tr.fit(cached_train, epochs=hp_final_epochs, validation_data=cached_validation)
+
+rmse_tr = history_tr.history["root_mean_squared_error"][-1]
+print(f"Root mean squared error in user rating from training: {rmse_tr:.2f}")
