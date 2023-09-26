@@ -163,3 +163,12 @@ print(f"Root mean squared error in user rating from validation: {val_rmse_tr:.2f
 # Evaluate model
 
 eval_tr = model_tr.evaluate(cached_test, return_dict=True)
+
+rmse_eval_tr = eval_tr["root_mean_squared_error"]
+print(f"Root mean squared error in user rating from evaluation: {rmse_eval_tr:.2f}")
+
+# Model on testing set
+
+model_tr.predict(cached_test)
+
+# Save model
