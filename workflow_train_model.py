@@ -156,3 +156,10 @@ history_tr = model_tr.fit(cached_train, epochs=hp_final_epochs, validation_data=
 
 rmse_tr = history_tr.history["root_mean_squared_error"][-1]
 print(f"Root mean squared error in user rating from training: {rmse_tr:.2f}")
+
+val_rmse_tr = history_tr.history["val_root_mean_squared_error"][-1]
+print(f"Root mean squared error in user rating from validation: {val_rmse_tr:.2f}")
+
+# Evaluate model
+
+eval_tr = model_tr.evaluate(cached_test, return_dict=True)
