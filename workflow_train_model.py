@@ -172,3 +172,10 @@ print(f"Root mean squared error in user rating from evaluation: {rmse_eval_tr:.2
 model_tr.predict(cached_test)
 
 # Save model
+
+export_path = '/outputs/trainedRecommender'
+print('export_path = {}\n'.format(export_path))
+
+model_tr.save(export_path)
+
+print('Done')
