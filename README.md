@@ -1,1 +1,1 @@
-# AI-Reco
+# AI-Recommender-Sy
