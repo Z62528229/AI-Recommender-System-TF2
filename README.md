@@ -1,1 +1,1 @@
-# AI-Recommender-System-TF2\n\nLast updated: A
+# AI-Recommender-System-TF2\n\nLast updated: Aug 16th 2021\n\n
